@@ -1,0 +1,168 @@
+(function ($) {
+    "use strict";
+   
+    $(document).on('ready', function () {
+
+        // data background 
+        $("[data-background]").each(function () {
+            $(this).css("background-image", "url(" + $(this).attr("data-background") + ")");
+        });
+
+    });
+
+    // hero slider
+    $('.hero-slider').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        margin: -1,
+        autoplay: true,
+        autoplayHoverPause:true,
+        autoplayTimeout: 5000,
+        items: 1,
+        navText: [
+            "<i class='far fa-long-arrow-left'></i>",
+            "<i class='far fa-long-arrow-right'></i>"
+        ],
+    });
+
+    $('.hero-slider').on('change.owl.carousel', function (event) {
+        new WOW().init();
+    });
+
+    // partner slider
+    $('.partner-slider').owlCarousel({
+        loop: true,
+        margin: 50,
+        nav: false,
+        navText: [
+            "<i class='icofont-long-arrow-left'></i>",
+            "<i class='icofont-long-arrow-right'></i>"
+        ],
+        dots: false,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
+
+    // testimonial slider
+    $('.testimonial-slider').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        navText: [
+            "<i class='icofont-long-arrow-left'></i>",
+            "<i class='icofont-long-arrow-right'></i>"
+        ],
+        dots: true,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+
+    // header search
+    if ($('.search-box-outer').length) {
+        $('.search-box-outer').on('click', function () {
+            $('body').addClass('search-active');
+        });
+        $('.close-search').on('click', function () {
+            $('body').removeClass('search-active');
+        });
+    }
+
+    // fun fact counter
+    $('.counter').countTo();
+    $('.counter-box').appear(function () {
+            $('.counter').countTo();
+        }, {
+        accY: -100
+    });
+
+    // progress bar
+    var progressBar = $('.progress');
+    if(progressBar.length) {
+        progressBar.each(function () {
+            var Self = $(this);
+            Self.appear(function () {
+            var progressValue = Self.data('value');
+            Self.find('.progress-bar').animate({
+                width:progressValue+'%'           
+            }, 1000);
+            });
+        })
+    }
+
+    // magnific popup init
+    $(".popup-gallery").magnificPopup({
+        delegate: '.popup-img',
+        type: 'image',
+        gallery: {
+            enabled: true
+        },
+    });
+
+    $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
+        type: "iframe",
+        mainClass: "mfp-fade",
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
+
+    // copyright date
+    var date = new Date().getFullYear();
+    $('#date').html(date);
+
+    $(window).on('scroll', function () {
+
+        // scroll to top
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            $("#scroll-top").fadeIn('slow');
+        } else {
+            $("#scroll-top").fadeOut('slow');
+        }
+
+        // navbar fix
+        if ($(this).scrollTop() > 50) {
+            $('.navbar').addClass("fixed-top");
+        } else {
+            $('.navbar').removeClass("fixed-top");
+        }
+
+    });  
+    
+    $(window).on('load', function () {
+
+        // preloader
+        $(".preloader").fadeOut("slow");
+
+        // wow init
+        new WOW().init(); 
+
+        // scroll top
+        $("#scroll-top").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 1500);
+            return false;
+        });
+
+    });	
+
+})(jQuery);
