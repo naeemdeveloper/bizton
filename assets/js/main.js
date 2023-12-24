@@ -26,10 +26,6 @@
         ],
     });
 
-    $('.hero-slider').on('change.owl.carousel', function (event) {
-        new WOW().init();
-    });
-
     // partner slider
     $('.partner-slider').owlCarousel({
         loop: true,
@@ -155,7 +151,7 @@
         $(".preloader").fadeOut("slow");
 
         // wow init
-        new WOW().init(); 
+        new WOW().init();
 
         // scroll top
         $("#scroll-top").click(function () {
