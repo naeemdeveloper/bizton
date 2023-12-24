@@ -13,12 +13,12 @@ table of contents:
 ---------------------------------------------------------------
 >> general css
 >> preloader css
->> theme default css
 >> margin padding css
 >> site title css
+>> theme button css
 >> feature css
 >> about css
->> theme button css
+>> process css
 >> scroll top css
 >> header top css
 >> nav menu css
@@ -43,7 +43,6 @@ table of contents:
 >> quote css
 >> team css
 >> team single css
->> process css
 >> pricing css
 >> faq css
 >> partner css
@@ -90,7 +89,7 @@ body {
 }
 
 a {
-    color: #14212B;
+    color: #151515;
     display: inline-block;
 }
 
@@ -124,7 +123,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #25262A;
+    color: #151515;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -141,19 +140,38 @@ h2 {
 }
 
 h3 {
-    font-size: 36px;
-}
-
-h4 {
     font-size: 30px;
 }
 
-h5 {
+h4 {
     font-size: 24px;
 }
 
+h5 {
+    font-size: 20px;
+    letter-spacing: .5px;
+}
+
 h6 {
-    font-size: 18px;
+    font-size: 16px;
+}
+
+@media all and (max-width: 575px) {
+    h1 {
+        font-size: 42px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 18px;
+    }
 }
 
 p {
@@ -289,51 +307,6 @@ label {
     }
 }
 
-/*-- theme default css --*/
-.ovrflow-hidden {
-    overflow: hidden;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.space-between {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-.c-pd {
-    padding: 0 7rem;
-}
-
-.s-pd {
-    padding: 0 12rem;
-}
-
-.h-100 {
-    height: 100%;
-}
-
-.h-100vh {
-    height: 100vh;
-}
-
-.bg {
-    background-color: #F5F5F5;
-}
-
-.bg-heading {
-    background-color: #1b1b1b;
-}
-
 /*-- margin padding css --*/
 .pb-140 {
     padding-bottom: 140px;
@@ -433,6 +406,10 @@ label {
 
 .pb-80 {
     padding-bottom: 80px;
+}
+
+.pb-85 {
+    padding-bottom: 85px;
 }
 
 .pb-90 {
@@ -572,6 +549,61 @@ label {
 
 .site-heading p {
     font-size: 16px;
+}
+
+/*-- theme button css --*/
+.theme-btn {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 12px 24px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+    background-color: #fd4a18;
+}
+
+.theme-btn::before {
+    content: "";
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: 10px;
+    height: 10px;
+    background: #151515;
+    border-radius: 8px;
+    z-index: -1;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.theme-btn:hover {
+    color: #fff;
+}
+
+.theme-btn:hover::before {
+    width: 105%;
+    height: 105%;
+}
+
+.theme-btn2 {
+    background: #151515;
+}
+
+.theme-btn2::before {
+    background: #fd4a18;
+}
+
+.theme-btn i {
+    margin-left: 5px;
+    font-size: 14px;
 }
 
 /*-- feature css --*/
@@ -748,7 +780,7 @@ label {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-top: 1px solid #ECF1F4;
+    border-top: 1px solid #e7e7e7;
     margin-top: 30px;
     padding: 30px 0;
 }
@@ -792,6 +824,10 @@ label {
     line-height: 30px;
 }
 
+.about-button {
+    margin-top: 20px;
+}
+
 @media all and (max-width: 991px) {
     .about-right {
         margin-top: 60px;
@@ -804,59 +840,57 @@ label {
     }
 }
 
-/*-- theme button css --*/
-.theme-btn {
-    font-size: 16px;
-    color: #ffffff;
-    padding: 12px 24px;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    text-transform: uppercase;
+/*-- process css --*/
+.process-single {
     position: relative;
-    cursor: pointer;
     text-align: center;
-    overflow: hidden;
-    z-index: 1;
-    border: none;
-    background-color: #fd4a18;
+    margin-bottom: 30px;
 }
 
-.theme-btn::before {
-    content: "";
+.process-single .icon {
+    height: 120px;
+    width: 120px;
+    background: transparent;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 2px solid #e7e7e7;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.process-single span {
     position: absolute;
-    right: -1px;
-    bottom: -1px;
-    width: 10px;
-    height: 10px;
-    background: #151515;
-    border-radius: 8px;
-    z-index: -1;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
+    color: #151515;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    opacity: .3;
 }
 
-.theme-btn:hover {
-    color: #fff;
-}
-
-.theme-btn:hover::before {
-    width: 105%;
-    height: 105%;
-}
-
-.theme-btn2 {
-    background: #151515;
-}
-
-.theme-btn2::before {
+.process-single:hover .icon {
     background: #fd4a18;
+    border: 2px solid transparent;
 }
 
-.theme-btn i {
-    margin-left: 5px;
-    font-size: 14px;
+.process-single:hover span {
+    color: #fff;
+    opacity: 1;
+}
+
+.process-single h4 {
+    margin-bottom: 10px;
 }
 
 /*-- scroll top css --*/
@@ -2618,7 +2652,7 @@ button.navbar-toggler:focus {
 }
 
 .widget .widget-title {
-    color: #25262A;
+    color: #151515;
     padding-bottom: 10px;
     margin-bottom: 30px;
     position: relative;
@@ -3111,70 +3145,6 @@ button.navbar-toggler:focus {
     margin-bottom: 30px;
 }
 
-/*-- process css --*/
-.process-single {
-    position: relative;
-}
-
-.process-single .icon {
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    position: relative;
-    border-radius: 50%;
-    font-size: 40px;
-    border: 4px solid #fd4a18;
-    padding: 5px;
-    margin-bottom: 30px;
-    -webkit-box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
-            box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
-}
-
-.process-single .icon img {
-    border-radius: 50%;
-}
-
-.process-single span {
-    position: absolute;
-    height: 35px;
-    width: 35px;
-    font-size: 14px;
-    background: #fd4a18;
-    line-height: 35px;
-    border-radius: 50%;
-    color: #ffffff;
-    left: -3px;
-    top: -13px;
-    font-weight: 600;
-}
-
-.process-single h4 {
-    margin-bottom: 10px;
-}
-
-.process-single::before {
-    content: url(../img/process/4.png);
-    position: absolute;
-    right: -65px;
-    top: 34px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .process-single::before {
-        display: none;
-    }
-}
-
-@media (max-width: 767px) {
-    .process-single::before {
-        display: none;
-    }
-}
-
-.process-area .col-lg-3:last-child .process-single::before {
-    display: none;
-}
-
 /*-- pricing css --*/
 .pricing-item {
     border-radius: 10px;
@@ -3494,7 +3464,7 @@ button.navbar-toggler:focus {
 
 /*-- footer css --*/
 .footer-area {
-    background: #25262A;
+    background: #151515;
 }
 
 .footer-widget-box {
