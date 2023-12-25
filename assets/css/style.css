@@ -19,6 +19,7 @@ table of contents:
 >> feature css
 >> about css
 >> process css
+>> counter css
 >> scroll top css
 >> header top css
 >> nav menu css
@@ -33,7 +34,6 @@ table of contents:
 >> choose css
 >> skill css
 >> testimonial css
->> counter css
 >> case studies css
 >> case single css
 >> blog css
@@ -891,6 +891,51 @@ label {
 
 .process-single h4 {
     margin-bottom: 10px;
+}
+
+/*-- counter css --*/
+.counter-area {
+    position: relative;
+    z-index: 1;
+    background-color: #151515;
+    background-image: url(../images/bg-pattern.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.counter-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.counter-box .icon {
+    color: #fd4a18;
+    font-size: 60px;
+    line-height: 0;
+    margin-bottom: 20px;
+}
+
+.counter-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.counter-box span {
+    display: block;
+    line-height: 1.2;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.counter-box .title {
+    color: #fff;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 /*-- scroll top css --*/
@@ -1985,70 +2030,6 @@ button.navbar-toggler:focus {
 
 .testimonial-rate {
     color: #fd4a18;
-}
-
-/*-- counter css --*/
-.counter-area {
-    background: #fd4a18;
-    position: relative;
-    z-index: 1;
-}
-
-.counter-box {
-    text-align: center;
-    padding: 35px;
-    border-radius: 20px;
-    position: relative;
-    z-index: 1;
-    border: 2px dashed #fff;
-}
-
-.counter-box .icon {
-    height: 75px;
-    width: 75px;
-    font-size: 30px;
-    color: #fd4a18;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: #fff;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-}
-
-.counter-box .icon i {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg) !important;
-        transform: rotate(-45deg) !important;
-}
-
-.counter-box .counter {
-    display: block;
-    line-height: 1;
-    color: #fff;
-    font-size: 50px;
-    font-weight: 600;
-}
-
-.counter-box .title {
-    color: #fff;
-    margin-top: 15px;
-    font-size: 18px;
-}
-
-@media all and (max-width: 991px) {
-    .counter-area .counter-box {
-        margin-bottom: 25px;
-    }
 }
 
 /*-- case studies css --*/

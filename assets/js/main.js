@@ -84,12 +84,10 @@
         });
     }
 
-    // fun fact counter
-    $('.counter').countTo();
-    $('.counter-box').appear(function () {
-            $('.counter').countTo();
-        }, {
-        accY: -100
+    // counter up
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1500
     });
 
     // progress bar
