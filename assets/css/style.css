@@ -23,16 +23,16 @@ table of contents:
 >> service css
 >> pricing css
 >> case studies css
+>> video css
+>> play button css
 >> scroll top css
 >> header top css
 >> nav menu css
 >> bootstrap menu css
 >> dropdown toggle css
 >> hero css
->> play button css
 >> service single css
 >> cta css
->> video css
 >> choose css
 >> skill css
 >> testimonial css
@@ -1007,7 +1007,7 @@ label {
 .popular-item {
     font-size: 14px;
     color: #fff;
-    background: #FB3B3C;
+    background: #fd4a18;
     display: inline-block;
     padding: 6px 20px 5px;
     border-radius: 20px 0 0 20px;
@@ -1065,7 +1065,7 @@ label {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(21, 21, 21, .5);
+    background: rgba(21, 21, 21, .7);
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -1147,6 +1147,110 @@ label {
 .case-arrow:hover {
     background: #151515;
     color: #fff;
+}
+
+/*-- video css --*/
+.video-area {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.video-area::before {
+    content: "";
+    position: absolute;
+    background: rgba(21, 21, 21, .7);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.video-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 500px;
+    z-index: 100;
+}
+
+.video-area .play-btn {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+@media all and (max-width: 767px) {
+    .video-wrapper {
+        height: 300px;
+    }
+}
+
+/*-- play button css --*/
+.play-btn {
+    display: inline-block;
+    padding: 0;
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+    font-size: 20px;
+    text-align: center;
+    background: #fff;
+    color: #fd4a18 !important;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.play-btn i::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 20px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    -webkit-animation: ripple-wave 1s linear infinite;
+            animation: ripple-wave 1s linear infinite;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+}
+
+@-webkit-keyframes ripple-wave {
+    from {
+        -webkit-box-shadow: 0 0 rgb(255 255 255 / 10%), 0 0 0 15px rgb(255 255 255 / 10%), 0 0 0 30px rgb(255 255 255 / 10%);
+                box-shadow: 0 0 rgb(255 255 255 / 10%), 0 0 0 15px rgb(255 255 255 / 10%), 0 0 0 30px rgb(255 255 255 / 10%);
+    }
+
+    to {
+        -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, .1), 0 0 0 30px rgba(255, 255, 255, .1), 0 0 0 45px rgba(255, 255, 255, .02);
+                box-shadow: 0 0 0 15px rgba(255, 255, 255, .1), 0 0 0 30px rgba(255, 255, 255, .1), 0 0 0 45px rgba(255, 255, 255, .02);
+    }
+}
+
+@keyframes ripple-wave {
+    from {
+        -webkit-box-shadow: 0 0 rgb(255 255 255 / 10%), 0 0 0 15px rgb(255 255 255 / 10%), 0 0 0 30px rgb(255 255 255 / 10%);
+                box-shadow: 0 0 rgb(255 255 255 / 10%), 0 0 0 15px rgb(255 255 255 / 10%), 0 0 0 30px rgb(255 255 255 / 10%);
+    }
+
+    to {
+        -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, .1), 0 0 0 30px rgba(255, 255, 255, .1), 0 0 0 45px rgba(255, 255, 255, .02);
+                box-shadow: 0 0 0 15px rgba(255, 255, 255, .1), 0 0 0 30px rgba(255, 255, 255, .1), 0 0 0 45px rgba(255, 255, 255, .02);
+    }
 }
 
 /*-- scroll top css --*/
@@ -1723,66 +1827,6 @@ button.navbar-toggler:focus {
     }
 }
 
-/*-- play button css --*/
-.play-btn {
-    display: inline-block;
-    padding: 0;
-    height: 75px;
-    width: 75px;
-    line-height: 75px;
-    font-size: 20px;
-    text-align: center;
-    background: #fff;
-    color: #fd4a18 !important;
-    position: absolute;
-    border-radius: 50%;
-}
-
-.play-btn i::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 20px;
-    height: 75px;
-    width: 75px;
-    border-radius: 50%;
-    -webkit-animation: ripple-wave 1s linear infinite;
-            animation: ripple-wave 1s linear infinite;
-    -webkit-animation-play-state: running;
-            animation-play-state: running;
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
-}
-
-@-webkit-keyframes ripple-wave {
-    from {
-        -webkit-box-shadow: 0 0 rgb(255 255 255 / 10%), 0 0 0 15px rgb(255 255 255 / 10%), 0 0 0 30px rgb(255 255 255 / 10%);
-                box-shadow: 0 0 rgb(255 255 255 / 10%), 0 0 0 15px rgb(255 255 255 / 10%), 0 0 0 30px rgb(255 255 255 / 10%);
-    }
-
-    to {
-        -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, .1), 0 0 0 30px rgba(255, 255, 255, .1), 0 0 0 45px rgba(255, 255, 255, .02);
-                box-shadow: 0 0 0 15px rgba(255, 255, 255, .1), 0 0 0 30px rgba(255, 255, 255, .1), 0 0 0 45px rgba(255, 255, 255, .02);
-    }
-}
-
-@keyframes ripple-wave {
-    from {
-        -webkit-box-shadow: 0 0 rgb(255 255 255 / 10%), 0 0 0 15px rgb(255 255 255 / 10%), 0 0 0 30px rgb(255 255 255 / 10%);
-                box-shadow: 0 0 rgb(255 255 255 / 10%), 0 0 0 15px rgb(255 255 255 / 10%), 0 0 0 30px rgb(255 255 255 / 10%);
-    }
-
-    to {
-        -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, .1), 0 0 0 30px rgba(255, 255, 255, .1), 0 0 0 45px rgba(255, 255, 255, .02);
-                box-shadow: 0 0 0 15px rgba(255, 255, 255, .1), 0 0 0 30px rgba(255, 255, 255, .1), 0 0 0 45px rgba(255, 255, 255, .02);
-    }
-}
-
 /*-- service single css --*/
 .service-details img {
     border-radius: 12px;
@@ -1844,63 +1888,6 @@ button.navbar-toggler:focus {
     color: #fff;
     font-weight: 700;
     margin-bottom: 10px;
-}
-
-/*-- video css --*/
-.video-area {
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.video-area::before {
-    content: "";
-    position: absolute;
-    background: rgba(21, 21, 21, 0.5);
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-}
-
-.video-wrapper {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border-radius: 5px;
-    height: 500px;
-    z-index: 100;
-}
-
-.video-wrapper img {
-    border-radius: 12px;
-}
-
-.video-area .play-btn {
-    display: inline-block;
-    padding: 0;
-    height: 75px;
-    width: 75px;
-    text-align: center;
-    background: #fff;
-    position: absolute;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-}
-
-@media all and (max-width: 767px) {
-    .video-wrapper {
-        height: 250px;
-    }
 }
 
 /*-- choose css --*/
