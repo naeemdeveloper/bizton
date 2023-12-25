@@ -19,6 +19,7 @@
         autoplay: true,
         autoplayHoverPause:true,
         autoplayTimeout: 5000,
+        autoHeight:true,
         items: 1,
         navText: [
             "<i class='far fa-long-arrow-left'></i>",

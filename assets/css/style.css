@@ -920,7 +920,6 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
 }
 
 .counter-box span {
@@ -935,7 +934,6 @@ label {
 .counter-box .title {
     color: #fff;
     font-weight: 500;
-    margin-top: 10px;
 }
 
 /*-- scroll top css --*/
