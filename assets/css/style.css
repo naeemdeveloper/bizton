@@ -22,6 +22,7 @@ table of contents:
 >> counter css
 >> service css
 >> pricing css
+>> case studies css
 >> scroll top css
 >> header top css
 >> nav menu css
@@ -35,7 +36,6 @@ table of contents:
 >> choose css
 >> skill css
 >> testimonial css
->> case studies css
 >> case single css
 >> blog css
 >> blog single css
@@ -1005,15 +1005,16 @@ label {
 }
 
 .popular-item {
+    font-size: 14px;
     color: #fff;
     background: #FB3B3C;
     display: inline-block;
-    padding: 7px 20px 5px;
+    padding: 6px 20px 5px;
     border-radius: 20px 0 0 20px;
     text-transform: uppercase;
     letter-spacing: .5px;
     position: absolute;
-    top: 95px;
+    top: 70px;
     right: 0;
 }
 
@@ -1045,6 +1046,107 @@ label {
 
 .pricing-footer {
     margin-top: 30px;
+}
+
+/*-- case studies css --*/
+.case-item {
+    margin-bottom: 30px;
+}
+
+.case-img {
+    position: relative;
+}
+
+.case-img::before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 21, 21, .5);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.case-item:hover .case-img::before {
+    opacity: 1;
+}
+
+.case-link {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #fd4a18 !important;
+    background: #fff;
+    text-align: center;
+    border-radius: 50px;
+    left: 50%;
+    top: 50%;
+    font-size: 20px;
+    margin-top: 50px;
+    opacity: 0;
+    -webkit-box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
+            box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.2s;
+       transition-delay: 0.2s;
+}
+
+.case-item:hover .case-link {
+    margin-top: 0px;
+    opacity: 1;
+}
+
+.case-content {
+    padding: 30px;
+    background: #fff;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
+        box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
+}
+
+.case-content-info .case-cat {
+    color: #fd4a18;;
+    font-weight: 500;
+}
+
+.case-content-info a:hover {
+    color: #fd4a18;
+}
+
+.case-arrow {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #fd4a18;
+    color: #fff;
+    -webkit-box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
+            box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.case-arrow:hover {
+    background: #151515;
+    color: #fff;
 }
 
 /*-- scroll top css --*/
@@ -2055,123 +2157,6 @@ button.navbar-toggler:focus {
 
 .testimonial-rate {
     color: #fd4a18;
-}
-
-/*-- case studies css --*/
-.case-item {
-    margin-bottom: 25px;
-}
-
-.case-img {
-    position: relative;
-}
-
-.case-img::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    right: 10px;
-    left: 10px;
-    opacity: 0;
-    border-radius: 10px;
-    background: rgba(21, 21, 21, .7);
-    -webkit-transform: scaleY(0);
-        -ms-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-
-.case-item:hover .case-img::before {
-    opacity: 1;
-    -webkit-transform: scaleY(1);
-    -ms-transform: scaleY(1);
-        transform: scaleY(1);
-}
-
-.case-img img {
-    border-radius: 10px;
-}
-
-.case-link {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    color: #fd4a18 !important;
-    background: #fff;
-    text-align: center;
-    border-radius: 50px;
-    left: 50%;
-    top: 50%;
-    font-size: 20px;
-    margin-top: 50px;
-    opacity: 0;
-    -webkit-box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
-            box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    -webkit-transition-delay: 0.3s;
-    -o-transition-delay: 0.3s;
-       transition-delay: 0.3s;
-}
-
-.case-item:hover .case-link {
-    margin-top: 0px;
-    opacity: 1;
-}
-
-.case-content {
-    padding: 10px 15px;
-    background: #fff;
-    border-radius: 10px;
-    margin-top: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-shadow: 0 0 40px 5px rgb(0 0 0 / 3%);
-            box-shadow: 0 0 40px 5px rgb(0 0 0 / 3%);
-}
-
-.case-content-info small {
-    color: #fd4a18;
-}
-
-.case-content-info a {
-    font-size: 22px;
-}
-
-.case-content-info a:hover {
-    color: #fd4a18;
-}
-
-.case-arrow {
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 8px;
-    text-align: center;
-    background: #fd4a18;
-    color: #fff;
-    -webkit-box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
-            box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-.case-arrow:hover {
-    background: #151515;
-    color: #fff;
 }
 
 /*-- case single css --*/
