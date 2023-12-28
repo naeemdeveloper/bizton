@@ -126,7 +126,7 @@
     $(window).on('scroll', function () {
 
         // scroll to top
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 500) {
             $("#scroll-top").fadeIn('slow');
         } else {
             $("#scroll-top").fadeOut('slow');
