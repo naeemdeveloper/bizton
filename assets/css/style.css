@@ -27,6 +27,7 @@ table of contents:
 >> play button css
 >> team css
 >> faq css
+>> testimonial css
 >> scroll top css
 >> header top css
 >> nav menu css
@@ -37,7 +38,6 @@ table of contents:
 >> cta css
 >> choose css
 >> skill css
->> testimonial css
 >> case single css
 >> blog css
 >> blog single css
@@ -1383,6 +1383,66 @@ label {
     }
 }
 
+/*-- testimonial css --*/
+.testimonial-area {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    background-image: url(../images/testimonial.jpg);
+    width: 100%;
+    z-index: -1;
+}
+
+.testimonial-bg::before {
+    content: "";
+    position: absolute;
+    background: rgba(21, 21, 21, .7);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.testimonial-single {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #e7e7e7;
+}
+
+.testimonial-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+}
+
+.testimonial-author-img {
+    margin-right: 20px;
+    width: 80px;
+}
+
+.testimonial-quote-icon i {
+    color: #fd4a18;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.testimonial-rate {
+    color: #fd4a18;
+}
+
 /*-- scroll top css --*/
 #scroll-top {
     display: none;
@@ -2178,102 +2238,6 @@ button.navbar-toggler:focus {
     .skill-img img {
         width: 100%;
     }
-}
-
-/*-- testimonial css --*/
-.testimonial-area {
-    position: relative;
-    z-index: 1;
-}
-
-.testimonial-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 500px;
-    background-image: url(../img/testimonial/testimonial.jpg);
-    width: 100%;
-    z-index: -1;
-}
-
-.testimonial-bg::before {
-    content: "";
-    position: absolute;
-    background: rgba(21, 21, 21, 0.7);
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-}
-
-.testimonial-single {
-    background: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 0 3px 24px rgb(0 0 0 / 5%);
-            box-shadow: 0 3px 24px rgb(0 0 0 / 5%);
-}
-
-.testimonial-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 30px;
-}
-
-.testimonial-author-img {
-    margin-right: 20px;
-    width: 80px;
-    padding: 5px;
-    border-radius: 50px;
-    border: 2px dashed #fd4a18;
-}
-
-.testimonial-author-img img {
-    border-radius: 50%;
-}
-
-.testimonial-author-info h4 {
-    color: #fd4a18;
-    font-size: 20px;
-}
-
-.testimonial-quote-icon i {
-    font-size: 50px;
-    color: #fd4a18;
-}
-
-.testimonial-area .owl-dots {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.testimonial-area .owl-dots .owl-dot span {
-    border: 3px solid #fd4a18;
-    margin: 5px;
-    border-radius: 50px;
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    background-color: #fff;
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-.testimonial-area .owl-dots .owl-dot.active span {
-    background-color: #fd4a18;
-}
-
-.testimonial-rate {
-    color: #fd4a18;
 }
 
 /*-- case single css --*/
