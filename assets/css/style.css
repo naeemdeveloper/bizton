@@ -43,7 +43,6 @@ table of contents:
 >> sidebar css
 >> contact us css
 >> team single css
->> partner css
 >> breadcrumb css
 >> pagination css
 >> error css
@@ -554,7 +553,7 @@ label {
 
 .site-title {
     color: #151515;
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
 .site-heading p {
@@ -2963,11 +2962,6 @@ button.navbar-toggler:focus {
 .biography {
     padding-right: 20px;
     margin-bottom: 30px;
-}
-
-/*-- partner css --*/
-.partner-area .partner-wrapper img {
-    padding: 20px;
 }
 
 /*-- breadcrumb css --*/
