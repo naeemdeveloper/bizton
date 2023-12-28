@@ -28,6 +28,7 @@ table of contents:
 >> team css
 >> faq css
 >> testimonial css
+>> blog css
 >> scroll top css
 >> header top css
 >> nav menu css
@@ -35,15 +36,12 @@ table of contents:
 >> dropdown toggle css
 >> hero css
 >> service single css
->> cta css
 >> choose css
 >> skill css
 >> case single css
->> blog css
 >> blog single css
 >> sidebar css
 >> contact us css
->> quote css
 >> team single css
 >> partner css
 >> breadcrumb css
@@ -1443,6 +1441,61 @@ label {
     color: #fd4a18;
 }
 
+/*-- blog css --*/
+.blog-area .blog-single-item {
+    margin-bottom: 30px;
+}
+
+.blog-area .item {
+    -webkit-box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
+            box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
+    background: #ffffff;
+}
+
+.blog-area .blog-items .info {
+    padding: 30px;
+}
+
+.blog-area .blog-items .info .meta {
+    margin-bottom: 15px;
+}
+
+.blog-area .blog-items .info .meta ul li {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+
+.blog-area .blog-items .info .meta ul li i {
+    margin-right: 2px;
+    color: #fd4a18;
+}
+
+.blog-area .blog-items .info .meta a {
+    text-transform: capitalize;
+}
+
+.blog-area .blog-items .info .meta ul li a:hover,
+.blog-area .blog-items .info h4 a:hover,
+.blog-area .btn-more:hover {
+    color: #fd4a18;
+}
+
+.blog-area .blog-items .info h4 {
+    margin-bottom: 10px;
+}
+
+.blog-area.content-less .btn-more {
+    color: #fd4a18;
+}
+
+.blog-area .btn-more {
+    color: #151515;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
 /*-- scroll top css --*/
 #scroll-top {
     display: none;
@@ -2048,38 +2101,6 @@ button.navbar-toggler:focus {
     color: #fff;
 }
 
-/*-- cta css --*/
-.cta-banner {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding: 90px 0;
-    z-index: 1;
-}
-
-.cta-banner::before {
-    content: "";
-    position: absolute;
-    background: rgba(21, 21, 21, 0.7);
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: -1;
-}
-
-.cta-content {
-    text-align: center;
-    color: #fff;
-}
-
-.cta-content h2 {
-    color: #fff;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
 /*-- choose css --*/
 .choose-icon {
     position: relative;
@@ -2308,109 +2329,6 @@ button.navbar-toggler:focus {
 .case-single-list i {
     color: #fd4a18;
     margin-right: 10px;
-}
-
-/*-- blog css --*/
-.blog-area .blog-single-item {
-    margin-bottom: 30px;
-}
-
-.blog-area .item {
-    -webkit-box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
-            box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
-    background: #ffffff;
-    border-radius: 10px;
-}
-
-.blog-area .blog-items .item .thumb {
-    position: relative;
-    padding: 15px;
-}
-
-.blog-area .blog-items .info {
-    padding: 0 30px 30px 30px;
-}
-
-.blog-area.full-blog .blog-items .info {
-    padding-top: 15px;
-}
-
-.blog-area .blog-items .info h4 {
-    margin-bottom: 10px;
-}
-
-.blog-area .blog-items .item .thumb img {
-    border-radius: 10px;
-}
-
-.blog-area .blog-items .info .meta ul li {
-    display: inline-block;
-    margin-right: 15px;
-    position: relative;
-    font-weight: 500;
-    color: #232323;
-    font-size: 13px;
-}
-
-.blog-area .blog-items .info .meta ul li i {
-    font-weight: 500;
-    margin-right: 2px;
-    color: #fd4a18;
-}
-
-.blog-area .blog-items .info .meta ul li a:hover,
-.blog-area .blog-items .info h4 a:hover,
-.blog-area .btn-more:hover {
-    color: #fd4a18;
-}
-
-.blog-area.content-less .btn-more {
-    color: #fd4a18;
-}
-
-.blog-area .blog-items .info .meta {
-    margin-bottom: 15px;
-}
-
-.blog-area .blog-items .info .meta a {
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.blog-area .btn-more {
-    margin-top: 15px;
-    text-transform: capitalize;
-}
-
-.blog-area .btn-more i {
-    position: relative;
-    top: 2px;
-    margin-left: 1px;
-}
-
-.blog-area .blog-items .info .bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    border-top: 1px solid #e7e7e7;
-    margin-top: 20px;
-    padding-top: 30px;
-}
-
-.blog-area .blog-items .info .bottom img {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 7px;
-    border: 1px solid #e7e7e7;
-    padding: 3px;
-    max-width: 60px;
 }
 
 /*-- blog single css --*/
@@ -2995,114 +2913,6 @@ button.navbar-toggler:focus {
 @media all and (max-width: 991px) {
     .contact-form {
         padding: 50px 20px;
-    }
-}
-
-/*-- quote css --*/
-.quote-content {
-    background: #fd4a18;
-    padding: 40px;
-    border-radius: 10px;
-    margin-top: 80px;
-    -webkit-box-shadow: 0 0 40px 5px rgb(0 0 0 / 3%);
-            box-shadow: 0 0 40px 5px rgb(0 0 0 / 3%);
-}
-
-.quote-thum {
-    margin-right: -100px;
-}
-
-.quote-thum img {
-    border-radius: 10px;
-}
-
-.quote-content .quote-header h6 {
-    display: inline-block;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #fff;
-    font-size: 18px;
-}
-
-.quote-content .quote-header h2 {
-    color: #fff;
-    font-size: 35px;
-    margin-bottom: 30px;
-    margin-top: 10px;
-}
-
-.quote-content .form-group {
-    margin-bottom: 20px;
-}
-
-.quote-content .form-group .form-control {
-    height: 50px;
-    font-size: 16px;
-    background: transparent;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    color: #fff;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
-
-.quote-content textarea {
-    height: 120px !important;
-}
-
-.quote-content .form-control::-webkit-input-placeholder {
-    color: #F2F3F5;
-    opacity: 1;
-}
-
-.quote-content .form-control::-moz-placeholder {
-    color: #F2F3F5;
-    opacity: 1;
-}
-
-.quote-content .form-control:-ms-input-placeholder {
-    color: #F2F3F5;
-    opacity: 1;
-}
-
-.quote-content .form-control::-ms-input-placeholder {
-    color: #F2F3F5;
-    opacity: 1;
-}
-
-.quote-content .form-control::placeholder {
-    color: #F2F3F5;
-    opacity: 1;
-}
-
-.quote-content .form-control:-ms-input-placeholder {
-    color: #F2F3F5;
-}
-
-.quote-content .form-control::-ms-input-placeholder {
-    color: #F2F3F5;
-}
-
-.quote-content .theme-btn {
-    background: #fff;
-    font-weight: 600;
-    color: #fd4a18;
-}
-
-.quote-content .theme-btn:hover {
-    color: #fff;
-}
-
-@media all and (max-width: 1199px) {
-    .quote-content .quote-header h2 {
-        font-size: 25px;
-    }
-}
-
-@media all and (max-width: 991px) {
-    .quote-thum {
-        margin-right: 0;
     }
 }
 

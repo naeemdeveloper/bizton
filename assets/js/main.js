@@ -34,7 +34,7 @@
         nav: false,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 1000,
         responsive: {
             0: {
                 items: 1
