@@ -551,7 +551,7 @@ label {
 /*-- header top css --*/
 .header-top {
     padding: 15px 0;
-    background: #0D0D0D;
+    background: #151515;
 }
 
 .header-top-wrapper {
@@ -615,21 +615,22 @@ nav {
 nav .main-menu li {
     display: inline-block;
     position: relative;
-    margin-right: 35px;
+    margin-right: 30px;
     line-height: 1.7;
     z-index: 9999;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
     nav .main-menu li {
-        margin-right: 25px;
+        margin-right: 20px;
     }
 }
 nav .main-menu li.has-submenu::after {
     content: "\f107";
     font-family: "Font Awesome 5 Pro";
-    font-weight: 900;
-    color: #102039;
-    margin-left: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #151515;
+    margin-left: 1px;
     -webkit-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
@@ -650,33 +651,14 @@ nav .main-menu li.has-submenu::after {
     }
 }
 nav .main-menu li a {
-    color: #102039;
+    color: #151515;
     padding: 20px 0;
     font-weight: 500;
     display: inline-block;
     font-size: 16px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
-nav .main-menu li a::before {
-    content: "\f111";
-    font-family: "Font Awesome 5 Pro";
-    font-weight: 900;
-    color: #126d63;
-    font-size: 6px;
-    position: relative;
-    top: -3px;
-    left: -3px;
-    -webkit-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    opacity: 0;
-    visibility: hidden;
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
-    nav .main-menu li a::before {
-        display: none;
-    }
-}
+
 @media (min-width: 992px) {
     nav .main-menu li .submenu {
         position: absolute;
@@ -684,7 +666,7 @@ nav .main-menu li a::before {
         top: 125%;
         left: 0;
         background: #ffffff;
-        border: 1px solid #eaeaea;
+        border: 1px solid #e7e7e7;
         padding: 10px;
         opacity: 0;
         visibility: hidden;
@@ -697,19 +679,19 @@ nav .main-menu li a::before {
         margin-right: initial;
     }
     nav .main-menu li .submenu li a {
-        color: #102039;
+        color: #151515;
         display: block;
         padding: 7px;
         width: 100%;
     }
     nav .main-menu li .submenu li a:hover {
-        color: #126d63;
+        color: #fd4a18;
     }
     nav .main-menu li:hover.has-submenu::after {
-        color: #126d63;
+        color: #fd4a18;
     }
     nav .main-menu li:hover a {
-        color: #126d63;
+        color: #fd4a18;
     }
 }
 @media (min-width: 992px) and (min-width: 768px) and (max-width: 991.98px) {
@@ -726,7 +708,7 @@ nav .main-menu li a::before {
 }
 
 .mean-container .mean-nav {
-    background: #126d63;
+    background: #fd4a18;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
     .mean-container .mean-nav {
@@ -748,7 +730,7 @@ nav .main-menu li a::before {
     z-index: 9999;
 }
 .mean-container .mean-bar a.meanmenu-reveal {
-    background: #126d63;
+    background: #fd4a18;
     top: 8px;
     right: 20px !important;
 }
@@ -823,7 +805,7 @@ nav .main-menu li a::before {
 }
 .menu-area .menu-btn a:hover {
     color: #ffffff;
-    background-color: #126d63;
+    background-color: #fd4a18;
 }
 .menu-area .menu-btn a:before {
     display: none;
