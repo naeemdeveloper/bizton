@@ -3,6 +3,13 @@
    
     $(document).on('ready', function () {
 
+        // mobile menu
+        $('#mobile-menu').meanmenu({
+            meanMenuContainer: '.mobile-menu',
+            meanScreenWidth: "991.99",
+            onePage: false
+        });
+
         // data background 
         $("[data-background]").each(function () {
             $(this).css("background-image", "url(" + $(this).attr("data-background") + ")");
@@ -35,6 +42,7 @@
         dots: false,
         autoplay: true,
         autoplaySpeed: 1000,
+        autoplayTimeout:3000,
         responsive: {
             0: {
                 items: 1
@@ -44,30 +52,6 @@
             },
             991: {
                 items: 2
-            }
-        }
-    });
-
-    // partner slider
-    $('.partner-slider').owlCarousel({
-        loop: true,
-        margin: 50,
-        nav: false,
-        navText: [
-            "<i class='icofont-long-arrow-left'></i>",
-            "<i class='icofont-long-arrow-right'></i>"
-        ],
-        dots: false,
-        autoplay: true,
-        responsive: {
-            0: {
-                items: 2
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 6
             }
         }
     });
@@ -133,11 +117,11 @@
         }
 
         // navbar fix
-        if ($(this).scrollTop() > 50) {
-            $('.navbar').addClass("fixed-top");
-        } else {
-            $('.navbar').removeClass("fixed-top");
-        }
+        // if ($(this).scrollTop() > 50) {
+        //     $('.navbar').addClass("fixed-top");
+        // } else {
+        //     $('.navbar').removeClass("fixed-top");
+        // }
 
     });  
     
