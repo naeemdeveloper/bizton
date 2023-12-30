@@ -19,6 +19,7 @@ table of contents:
 >> header top css
 >> menu css
 >> search popup css
+>> hero css
 >> feature css
 >> about css
 >> process css
@@ -36,7 +37,6 @@ table of contents:
 >> scroll top css
 
 
->> hero css
 >> service single css
 >> choose css
 >> skill css
@@ -129,7 +129,7 @@ h6 {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 70px;
 }
 
 h2 {
@@ -155,7 +155,7 @@ h6 {
 
 @media all and (max-width: 575px) {
     h1 {
-        font-size: 42px;
+        font-size: 48px;
     }
     h2 {
         font-size: 30px;
@@ -534,18 +534,28 @@ label {
     background-color: #fd4a18;
 }
 
+@media (max-width: 575.98px) {
+    .theme-btn {
+        font-size: 14px;
+    }
+}
+
 .theme-btn:hover {
     color: #fff;
     background-color: #151515;
+}
+
+.theme-btn i {
+    margin-left: 5px;
+    font-size: 14px;
 }
 
 .theme-btn2 {
     background: #151515;
 }
 
-.theme-btn i {
-    margin-left: 5px;
-    font-size: 14px;
+.theme-btn2:hover {
+    background: #fd4a18;
 }
 
 /*-- header top css --*/
@@ -915,6 +925,141 @@ nav .main-menu li a {
 .search-popup input::placeholder,
 .search-popup textarea::placeholder {
     color: #cccccc;
+}
+
+/*-- hero css --*/
+.hero-single {
+    padding: 280px 0;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-single::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(21, 21, 21, 0.7);
+    z-index: -1;
+}
+
+.hero-single .hero-content .hero-title {
+    color: #fff;
+    margin: 20px 0;
+}
+
+.hero-single .hero-content .hero-sub-title {
+    position: relative;
+    text-transform: uppercase;
+    color: #fd4a18;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.hero-single .hero-content p {
+    color: #fff;
+    width: 80%;
+}
+
+.hero-single .hero-content .hero-btn {
+    gap: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+}
+
+.hero-slider.owl-theme .owl-nav {
+    margin-top: 0px;
+}
+
+.hero-slider.owl-theme .owl-nav [class*=owl-] {
+    color: #cccccc;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    line-height: 47px;
+    text-align: center;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.hero-slider.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #fd4a18;
+    color: #fff;
+}
+
+.hero-slider.owl-theme .owl-nav .owl-prev {
+    left: 30px;
+}
+
+.hero-slider.owl-theme .owl-nav .owl-next {
+    right: 30px;
+}
+
+.hero-slider.owl-theme .owl-nav .owl-prev,
+.hero-slider.owl-theme .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+}
+
+@media (max-width: 1199.98px) {
+    .hero-single {
+        padding: 200px 0;
+    }
+    .hero-single .hero-content .hero-title {
+        font-size: 60px;
+    }
+
+    .hero-single .hero-content p {
+        width: 100%;
+    }
+
+    .hero-slider.owl-theme .owl-nav .owl-prev,
+    .hero-slider.owl-theme .owl-nav .owl-next {
+        top: unset;
+        bottom: 5px !important;
+    }
+
+    .hero-slider.owl-theme .owl-nav .owl-next {
+        left: 100px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero-single .hero-content .hero-title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-single {
+        padding: 150px 0;
+    }
+    .hero-single .hero-content .hero-title {
+        font-size: 36px;
+    }
+    .hero-single .hero-content .hero-btn {
+        gap: 15px;
+    }
 }
 
 /*-- feature css --*/
@@ -2065,189 +2210,6 @@ nav .main-menu li a {
 
 #scroll-top:hover {
     background-color: #151515;
-}
-
-/*-- hero css --*/
-.hero-single {
-    padding-top: 280px;
-    padding-bottom: 180px;
-    background-position: center center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: relative;
-    z-index: 1;
-}
-
-.hero-single .hero-shape {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    bottom: 0;
-}
-
-.hero-single .hero-shape img {
-    width: 100%;
-}
-
-.hero-single::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(21, 21, 21, 0.7);
-    z-index: -1;
-}
-
-.hero-single .hero-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 100%;
-}
-
-.hero-single .hero-content .hero-title {
-    color: #fff;
-    font-size: 70px;
-    font-weight: 700;
-}
-
-.hero-single .hero-content .hero-sub-title {
-    color: #fd4a18;
-    font-size: 20px;
-    font-weight: 600;
-    position: relative;
-    text-transform: uppercase;
-}
-
-.hero-single .hero-content p {
-    color: #fff;
-    line-height: 30px;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-.hero-single .hero-content .hero-btn {
-    gap: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 1rem;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-}
-
-.hero-title {
-    font-weight: 700;
-    margin: 20px 0;
-}
-
-.hero-sub-title {
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1;
-}
-
-.hero-single .video-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-.hero-slider.owl-theme .owl-nav {
-    margin-top: 0px;
-}
-
-.hero-slider.owl-theme .owl-nav [class*=owl-] {
-    color: #fd4a18;
-    font-size: 25px;
-    margin: 0;
-    padding: 0;
-    background: rgba(0, 0, 0, 0.4);
-    display: inline-block;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-    line-height: 47px;
-    text-align: center;
-    border-radius: 50%;
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-.hero-slider.owl-theme .owl-nav [class*=owl-]:hover {
-    background: #fff;
-    color: #fd4a18;
-}
-
-.hero-slider.owl-theme .owl-nav .owl-prev {
-    left: 40px;
-}
-
-.hero-slider.owl-theme .owl-nav .owl-next {
-    right: 40px;
-}
-
-.hero-slider.owl-theme .owl-nav .owl-prev,
-.hero-slider.owl-theme .owl-nav .owl-next {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-}
-
-@media all and (max-width: 1199px) {
-    .hero-single .hero-content .hero-title {
-        font-size: 37px;
-    }
-
-    .hero-slider.owl-theme .owl-nav .owl-prev,
-    .hero-slider.owl-theme .owl-nav .owl-next {
-        top: unset;
-        bottom: 5px !important;
-    }
-
-    .hero-slider.owl-theme .owl-nav .owl-next {
-        left: 120px;
-    }
-}
-
-@media all and (max-width: 991px) {
-    .hero-single .hero-content .hero-title {
-        font-size: 35px;
-    }
-}
-
-@media all and (max-width: 767px) {
-    .hero-single .hero-content .hero-sub-title {
-        font-size: 18px;
-    }
 }
 
 /*-- service single css --*/

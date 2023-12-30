@@ -27,12 +27,6 @@
 
     });
 
-    $(window).on('resize', function(){
-        var win = $(this); //this = window
-        if (win.height() >= 820) { /* ... */ }
-        if (win.width() >= 1280) { /* ... */ }
-    });
-
     // hero slider
     $('.hero-slider').owlCarousel({
         loop: true,
@@ -45,9 +39,13 @@
         autoHeight:true,
         items: 1,
         navText: [
-            "<i class='far fa-long-arrow-left'></i>",
-            "<i class='far fa-long-arrow-right'></i>"
+            "<i class='fal fa-angle-left'></i>",
+            "<i class='fal fa-angle-right'></i>"
         ],
+    });
+
+    $('.hero-slider').on('change.owl.carousel', function (event) {
+        new WOW().init();
     });
 
     // testimonial slider
