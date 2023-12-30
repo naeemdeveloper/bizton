@@ -757,6 +757,15 @@ nav .main-menu li a {
     -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
 }
+.menu-area.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
 .menu-area .logo-area img {
     width: 200px;
 }

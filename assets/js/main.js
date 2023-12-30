@@ -126,11 +126,12 @@
         }
 
         // navbar fix
-        // if ($(this).scrollTop() > 50) {
-        //     $('.navbar').addClass("fixed-top");
-        // } else {
-        //     $('.navbar').removeClass("fixed-top");
-        // }
+        const mainHeight = $(".header-top").outerHeight();
+        if ($(this).scrollTop() > mainHeight) {
+            $('.menu-area').addClass("fixed-top");
+        } else {
+            $('.menu-area').removeClass("fixed-top");
+        }
 
     });  
     
