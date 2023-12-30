@@ -42,6 +42,14 @@
             "<i class='fal fa-angle-left'></i>",
             "<i class='fal fa-angle-right'></i>"
         ],
+        responsive: {
+            0: {
+                nav: false,
+            },
+            576: {
+                nav: true,
+            },
+        }
     });
 
     $('.hero-slider').on('change.owl.carousel', function (event) {
@@ -61,10 +69,7 @@
             0: {
                 items: 1
             },
-            767: {
-                items: 1
-            },
-            991: {
+            992: {
                 items: 2
             }
         }
