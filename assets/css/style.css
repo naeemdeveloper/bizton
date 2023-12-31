@@ -24,6 +24,7 @@ table of contents:
 >> process css
 >> counter css
 >> service css
+>> service details css
 >> pricing css
 >> case css
 >> video css
@@ -37,14 +38,13 @@ table of contents:
 >> breadcrumb css
 
 
->> service single css
 >> choose css
 >> skill css
->> case single css
->> blog single css
+>> case details css
+>> blog details css
 >> sidebar css
 >> contact us css
->> team single css
+>> team details css
 >> pagination css
 >> error css
 >> home 2 css
@@ -1356,6 +1356,37 @@ nav .main-menu li a {
     margin-top: 20px;
 }
 
+/*-- service details css --*/
+.service-details img {
+    border-radius: 12px;
+}
+
+.service-single-list i {
+    color: #fd4a18;
+    margin-right: 10px;
+}
+
+.brochure-widget a {
+    border: 2px solid #fd4a18;
+    padding: 10px 20px;
+    color: #fd4a18;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.brochure-widget a i {
+    margin-right: 10px;
+}
+
+.brochure-widget a:hover {
+    background-color: #fd4a18;
+    color: #fff;
+}
+
 /*-- pricing css --*/
 .pricing-area {
     background: #F7F8F9;
@@ -2203,37 +2234,6 @@ nav .main-menu li a {
     }
 }
 
-/*-- service single css --*/
-.service-details img {
-    border-radius: 12px;
-}
-
-.service-single-list i {
-    color: #fd4a18;
-    margin-right: 10px;
-}
-
-.service-download a {
-    border: 2px solid #fd4a18;
-    padding: 10px 20px;
-    color: #fd4a18;
-    display: block;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-.service-download a i {
-    margin-right: 10px;
-}
-
-.service-download a:hover {
-    background-color: #fd4a18;
-    color: #fff;
-}
-
 /*-- choose css --*/
 .choose-icon {
     position: relative;
@@ -2394,7 +2394,7 @@ nav .main-menu li a {
     }
 }
 
-/*-- case single css --*/
+/*-- case details css --*/
 .case-sidebar .case-sidebar-content ul li {
     border-bottom: 1px solid #e7e7e7;
     display: block;
@@ -2464,7 +2464,7 @@ nav .main-menu li a {
     margin-right: 10px;
 }
 
-/*-- blog single css --*/
+/*-- blog details css --*/
 .blog-single-area img {
     border-radius: 12px;
 }
@@ -2765,7 +2765,7 @@ nav .main-menu li a {
 }
 
 /*-- sidebar css --*/
-.widget {
+.bizton-widget {
     background: #fff;
     padding: 30px;
     margin-bottom: 30px;
@@ -2774,14 +2774,14 @@ nav .main-menu li a {
             box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
 }
 
-.widget .widget-title {
+.bizton-widget .widget-title {
     color: #151515;
     padding-bottom: 10px;
     margin-bottom: 30px;
     position: relative;
 }
 
-.widget .widget-title::before {
+.bizton-widget .widget-title::before {
     position: absolute;
     content: '';
     width: 30px;
@@ -2790,7 +2790,7 @@ nav .main-menu li a {
     left: 0;
 }
 
-.widget .widget-title::after {
+.bizton-widget .widget-title::after {
     position: absolute;
     content: '';
     width: 5px;
@@ -2799,22 +2799,22 @@ nav .main-menu li a {
     left: 35px;
 }
 
-.widget .search-form .form-control {
+.bizton-widget .search-form .form-control {
     padding: 10px 15px 10px 15px;
     border-radius: 10px;
     -webkit-box-shadow: none;
             box-shadow: none;
 }
 
-.widget .search-form {
+.bizton-widget .search-form {
     position: relative;
 }
 
-.widget .search-form .form-control:focus {
+.bizton-widget .search-form .form-control:focus {
     border-color: #fd4a18;
 }
 
-.widget .search-form button {
+.bizton-widget .search-form button {
     position: absolute;
     right: 0;
     top: 0;
@@ -2824,7 +2824,7 @@ nav .main-menu li a {
     color: #6C7C89;
 }
 
-.widget .category-list a {
+.bizton-widget .category-list a {
     display: block;
     padding: 10px 0;
     border-bottom: 1px solid #ced4da;
@@ -2833,17 +2833,17 @@ nav .main-menu li a {
     transition: all .5s ease-in-out;
 }
 
-.widget .category-list a:last-child {
+.bizton-widget .category-list a:last-child {
     margin-bottom: 0px;
     border-bottom: none;
 }
 
-.widget .category-list a:hover {
+.bizton-widget .category-list a:hover {
     padding-left: 10px;
     color: #fd4a18;
 }
 
-.widget .category-list a i {
+.bizton-widget .category-list a i {
     margin-right: 5px;
 }
 
@@ -2851,7 +2851,7 @@ nav .main-menu li a {
     float: right;
 }
 
-.widget .recent-post-single {
+.bizton-widget .recent-post-single {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2864,32 +2864,32 @@ nav .main-menu li a {
     margin-bottom: 20px;
 }
 
-.widget .recent-post-img {
+.bizton-widget .recent-post-img {
     margin-right: 20px;
 }
 
-.widget .recent-post-img img {
+.bizton-widget .recent-post-img img {
     border-radius: 10px;
     width: 100px;
 }
 
-.widget .recent-post-bio h6 {
+.bizton-widget .recent-post-bio h6 {
     font-size: 16px;
 }
 
-.widget .recent-post-bio span {
+.bizton-widget .recent-post-bio span {
     font-size: 14px;
 }
 
-.widget .recent-post-bio span i {
+.bizton-widget .recent-post-bio span i {
     margin-right: 5px;
 }
 
-.widget .recent-post-bio h6 a:hover {
+.bizton-widget .recent-post-bio h6 a:hover {
     color: #fd4a18;
 }
 
-.widget .social-share-link a {
+.bizton-widget .social-share-link a {
     width: 35px;
     height: 35px;
     line-height: 31px;
@@ -2903,12 +2903,12 @@ nav .main-menu li a {
     transition: all .5s ease-in-out;
 }
 
-.widget .social-share-link a:hover {
+.bizton-widget .social-share-link a:hover {
     background: #151515;
     color: #fff;
 }
 
-.widget .tag-list a {
+.bizton-widget .tag-list a {
     border: 1px solid #151515;
     padding: 3px 15px;
     margin-bottom: 10px;
@@ -2920,7 +2920,7 @@ nav .main-menu li a {
     transition: all .5s ease-in-out;
 }
 
-.widget .tag-list a:hover {
+.bizton-widget .tag-list a:hover {
     background-color: #151515;
     color: #fff;
 }
@@ -3049,7 +3049,7 @@ nav .main-menu li a {
     }
 }
 
-/*-- team single css --*/
+/*-- team details css --*/
 .team-single-img img {
     border-radius: 15px;
 }
