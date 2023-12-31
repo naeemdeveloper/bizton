@@ -10,16 +10,6 @@
             onePage: false
         });
 
-        // header search
-        if ($('.search-box-outer').length) {
-            $('.search-box-outer').on('click', function () {
-                $('body').addClass('search-active');
-            });
-            $('.close-search').on('click', function () {
-                $('body').removeClass('search-active');
-            });
-        }
-
         // data background 
         $("[data-background]").each(function () {
             $(this).css("background-image", "url(" + $(this).attr("data-background") + ")");
@@ -126,8 +116,8 @@
         }
 
         // navbar fix
-        const mainHeight = $(".header-top").outerHeight();
-        if ($(this).scrollTop() > mainHeight) {
+        const headerHeight = $(".header-top").outerHeight();
+        if ($(this).scrollTop() > headerHeight) {
             $('.menu-area').addClass("fixed-top");
         } else {
             $('.menu-area').removeClass("fixed-top");

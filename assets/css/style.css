@@ -18,7 +18,6 @@ table of contents:
 >> theme button css
 >> header top css
 >> menu css
->> search popup css
 >> hero css
 >> feature css
 >> about css
@@ -732,7 +731,7 @@ nav .main-menu li a {
 }
 @media (max-width: 991.98px) {
     .mean-container .mean-nav {
-        margin-top: 65px;
+        margin-top: 55px;
     }
 }
 
@@ -781,165 +780,10 @@ nav .main-menu li a {
     top: 5px;
 }
 
-.header-top-search a i {
-    color: #151515;
-    font-size: 18px;
-    font-weight: 500;
-    margin-right: 30px;
-    -webkit-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-.header-top-search a:hover {
-    color: #fd4a18;
-}
-
 @media (max-width: 991.98px) {
-    .menu-area .theme-btn {
+    .menu-area .header-btn {
         display: none;
     }
-    .header-top-search {
-        position: absolute;
-        top: 14px;
-        right: 57px;
-    }
-}
-
-/*-- search popup css --*/
-.search-popup {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 9999;
-    margin-top: -540px;
-    -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-            transform: translateY(-100%);
-    background-color: rgba(21, 21, 21, .9);
-    -webkit-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    -o-transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    -webkit-transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
-         -o-transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
-            transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
-}
-
-.search-active .search-popup {
-    -webkit-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-            transform: translateY(0%);
-    margin-top: 0;
-}
-
-.search-popup .close-search {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    font-size: 40px;
-    line-height: 0;
-    cursor: pointer;
-    -webkit-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
-}
-
-.search-popup form {
-    position: absolute;
-    max-width: 700px;
-    top: 50%;
-    left: 15px;
-    right: 15px;
-    margin: -35px auto 0;
-    -webkit-transform-origin: center;
-        -ms-transform-origin: center;
-            transform-origin: center;
-    -webkit-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
-}
-
-.search-active .search-popup form {
-    -webkit-transition-delay: 1200ms;
-         -o-transition-delay: 1200ms;
-            transition-delay: 1200ms;
-}
-
-.search-popup .form-group {
-    position: relative;
-    margin: 0px;
-    overflow: hidden;
-}
-
-.search-popup .form-group input[type="text"],
-.search-popup .form-group input[type="search"] {
-    position: relative;
-    display: block;
-    font-size: 20px;
-    line-height: 50px;
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #e7e7e7;
-    border-radius: 0;
-    height: 70px;
-    width: 100%;
-    padding: 10px 50px 10px 10px;
-    outline: none;
-    -webkit-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
-    font-weight: 400;
-}
-
-.search-popup .form-group input[type="submit"],
-.search-popup .form-group button {
-    position: absolute;
-    right: 10px;
-    top: 0px;
-    height: 70px;
-    line-height: 70px;
-    background: transparent;
-    text-align: center;
-    font-size: 20px;
-    color: #cccccc;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    -webkit-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
-}
-
-.search-popup .form-group input[type="submit"]:hover,
-.search-popup .form-group button:hover {
-    color: #cccccc;
-}
-
-.search-popup input::-webkit-input-placeholder, .search-popup textarea::-webkit-input-placeholder {
-    color: #cccccc;
-}
-
-.search-popup input::-moz-placeholder, .search-popup textarea::-moz-placeholder {
-    color: #cccccc;
-}
-
-.search-popup input:-ms-input-placeholder, .search-popup textarea:-ms-input-placeholder {
-    color: #cccccc;
-}
-
-.search-popup input::-ms-input-placeholder, .search-popup textarea::-ms-input-placeholder {
-    color: #cccccc;
-}
-
-.search-popup input::placeholder,
-.search-popup textarea::placeholder {
-    color: #cccccc;
 }
 
 /*-- hero css --*/
