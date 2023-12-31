@@ -819,7 +819,7 @@ nav .main-menu li a {
 }
 
 .hero-single .hero-content .hero-sub-title {
-    position: relative;
+    display: block;
     text-transform: uppercase;
     color: #fd4a18;
     font-size: 18px;
@@ -839,8 +839,20 @@ nav .main-menu li a {
     display: flex;
     margin-top: 40px;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+}
+
+.hero-slider .owl-item.active .hero-content .hero-title,
+.hero-slider .owl-item.active .hero-content .hero-sub-title {
+    -webkit-animation: 1.5s .3s fadeInUp;
+    animation: 1.5s .3s fadeInUp; 
+}
+
+.hero-slider .owl-item.active .hero-content p,
+.hero-slider .owl-item.active .hero-content .hero-btn {
+    -webkit-animation: 1.5s .3s fadeInDown;
+    animation: 1.5s .3s fadeInDown; 
 }
 
 .hero-slider.owl-theme .owl-nav {
@@ -1633,7 +1645,7 @@ nav .main-menu li a {
 
 .team-social a {
     color: #fd4a18;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 5px
 }
 

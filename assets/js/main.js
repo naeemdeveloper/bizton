@@ -27,6 +27,8 @@
         autoplayHoverPause:true,
         autoplayTimeout: 5000,
         autoHeight:true,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
         items: 1,
         navText: [
             "<i class='fal fa-angle-left'></i>",
@@ -40,10 +42,6 @@
                 nav: true,
             },
         }
-    });
-
-    $('.hero-slider').on('change.owl.carousel', function (event) {
-        new WOW().init();
     });
 
     // testimonial slider
