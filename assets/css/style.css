@@ -749,6 +749,12 @@ nav .main-menu li a {
     }
 }
 
+@media (max-width: 575.98px                             ) {
+    .mean-container .mean-bar a.meanmenu-reveal {
+        top: 1px;
+    }
+}
+
 .menu-area {
     position: relative;
     padding: 10px 0;
