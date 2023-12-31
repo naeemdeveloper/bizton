@@ -27,8 +27,6 @@
         autoplayHoverPause:true,
         autoplayTimeout: 5000,
         autoHeight:true,
-        animateIn: 'fadeIn',
-        animateOut: 'fadeOut',
         items: 1,
         navText: [
             "<i class='fal fa-angle-left'></i>",

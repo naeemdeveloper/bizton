@@ -867,14 +867,14 @@ nav .main-menu li a {
 
 .hero-slider .owl-item.active .hero-content .hero-title,
 .hero-slider .owl-item.active .hero-content .hero-sub-title {
-    -webkit-animation: 1.5s .3s fadeInUp;
-    animation: 1.5s .3s fadeInUp; 
+    -webkit-animation: 1.5s fadeInUp;
+    animation: 1.5s fadeInUp; 
 }
 
 .hero-slider .owl-item.active .hero-content p,
 .hero-slider .owl-item.active .hero-content .hero-btn {
-    -webkit-animation: 1.5s .3s fadeInDown;
-    animation: 1.5s .3s fadeInDown; 
+    -webkit-animation: 1.5s fadeInDown;
+    animation: 1.5s fadeInDown; 
 }
 
 .hero-slider.owl-theme .owl-nav {
@@ -2115,6 +2115,12 @@ nav .main-menu li a {
 
 #scroll-top:hover {
     background-color: #151515;
+}
+
+@media (max-width: 767.98px) {
+    #scroll-top {
+        display: none!important;
+    }
 }
 
 /*-- service single css --*/
