@@ -720,7 +720,7 @@ nav .main-menu li a {
 }
 @media (min-width: 992px) {
     nav .main-menu li:hover .submenu {
-        top: 115%;
+        top: 114%;
         opacity: 1;
         visibility: visible;
     }
