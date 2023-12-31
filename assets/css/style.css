@@ -745,7 +745,7 @@ nav .main-menu li a {
 }
 @media (max-width: 991.98px                             ) {
     .mean-container .mean-bar a.meanmenu-reveal {
-        top: 2px;
+        top: 4px;
     }
 }
 
