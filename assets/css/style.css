@@ -769,6 +769,16 @@ nav .main-menu li a {
     width: 100%;
     height: auto;
     background-color: #fff;
+    animation: fixed_top .8s;
+}
+
+@keyframes fixed_top {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 0;
+    }
 }
 
 .menu-area .logo-area img {

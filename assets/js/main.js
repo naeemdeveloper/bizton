@@ -69,20 +69,6 @@
         time: 1500
     });
 
-    // progress bar
-    var progressBar = $('.progress');
-    if(progressBar.length) {
-        progressBar.each(function () {
-            var Self = $(this);
-            Self.appear(function () {
-            var progressValue = Self.data('value');
-            Self.find('.progress-bar').animate({
-                width:progressValue+'%'           
-            }, 1000);
-            });
-        })
-    }
-
     // magnific popup init
     $(".popup-gallery").magnificPopup({
         delegate: '.popup-img',
@@ -103,6 +89,20 @@
     // copyright date
     var date = new Date().getFullYear();
     $('#date').html(date);
+
+    // progress bar
+    var progressBar = $('.progress');
+    if(progressBar.length) {
+        progressBar.each(function () {
+            var Self = $(this);
+            Self.appear(function () {
+            var progressValue = Self.data('value');
+            Self.find('.progress-bar').animate({
+                width:progressValue+'%'           
+            }, 1000);
+            });
+        })
+    }
 
     $(window).on('scroll', function () {
 
