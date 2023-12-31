@@ -731,12 +731,19 @@ nav .main-menu li a {
 }
 @media (max-width: 991.98px) {
     .mean-container .mean-nav {
-        margin-top: 55px;
+        margin-top: -4px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .mean-container .mean-nav {
+        margin-top: -10px;
     }
 }
 
 .mean-container .mean-bar {
     z-index: 9999;
+    top: 75px;
 }
 .mean-container .mean-bar a.meanmenu-reveal {
     background: #fd4a18;
@@ -745,13 +752,13 @@ nav .main-menu li a {
 }
 @media (max-width: 991.98px                             ) {
     .mean-container .mean-bar a.meanmenu-reveal {
-        top: 4px;
+        top: -61px;
     }
 }
 
 @media (max-width: 575.98px                             ) {
     .mean-container .mean-bar a.meanmenu-reveal {
-        top: 1px;
+        top: -64px;
     }
 }
 
@@ -779,6 +786,11 @@ nav .main-menu li a {
     100% {
       top: 0;
     }
+}
+
+.menu-area .logo-area {
+    position: relative;
+    z-index: 9999;
 }
 
 .menu-area .logo-area img {
