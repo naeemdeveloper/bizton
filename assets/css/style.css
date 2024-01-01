@@ -27,6 +27,7 @@ table of contents:
 >> service details css
 >> pricing css
 >> case css
+>> case details css
 >> video css
 >> play button css
 >> team css
@@ -40,7 +41,6 @@ table of contents:
 
 >> choose css
 >> skill css
->> case details css
 >> blog details css
 >> sidebar css
 >> contact us css
@@ -1551,6 +1551,39 @@ nav .main-menu li a {
     color: #fff;
 }
 
+/*-- case details css --*/
+.case-sidebar .case-info-widget ul li {
+    border-bottom: 1px solid #e7e7e7;
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.case-sidebar .case-info-widget ul li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.case-sidebar .case-info-widget ul li span {
+    display: block;
+    font-weight: 400;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.case-single-list li {
+    margin: 8px 0;
+}
+
+.case-single-list i {
+    color: #fd4a18;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
 /*-- video css --*/
 .video-area {
     position: relative;
@@ -2397,76 +2430,6 @@ nav .main-menu li a {
     .skill-img img {
         width: 100%;
     }
-}
-
-/*-- case details css --*/
-.case-sidebar .case-sidebar-content ul li {
-    border-bottom: 1px solid #e7e7e7;
-    display: block;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 33px;
-}
-
-.case-sidebar .case-sidebar-content ul li:last-child {
-    border-bottom: none;
-}
-
-.case-sidebar-title {
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
-
-.case-sidebar .case-sidebar-content ul li span {
-    display: block;
-    font-weight: normal;
-    margin: 0;
-    text-transform: capitalize;
-}
-
-.case-sidebar .case-sidebar-content .rating a {
-    color: #fd4a18;
-}
-
-.case-new-project {
-    background: #fd4a18 !important;
-}
-
-.case-new-project h4 {
-    color: #fff;
-    margin-bottom: 30px;
-}
-
-.new-project-btn {
-    background: #fff;
-    color: #fd4a18;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 25px;
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-.new-project-btn:hover {
-    background: #151515;
-    color: #fff;
-}
-
-.new-project-btn i {
-    margin-left: 8px;
-}
-
-.case-details img {
-    border-radius: 12px;
-}
-
-.case-single-list i {
-    color: #fd4a18;
-    margin-right: 10px;
 }
 
 /*-- blog details css --*/
