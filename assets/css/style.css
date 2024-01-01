@@ -1357,29 +1357,34 @@ nav .main-menu li a {
 }
 
 /*-- service details css --*/
-.service-details img {
-    border-radius: 12px;
+.service-single-list li {
+    margin: 8px 0;
 }
 
 .service-single-list i {
     color: #fd4a18;
+    font-size: 16px;
+    font-weight: 700;
     margin-right: 10px;
 }
 
 .brochure-widget a {
-    border: 2px solid #fd4a18;
-    padding: 10px 20px;
+    border: 1px solid #fd4a18;
+    padding: 12px 24px;
     color: #fd4a18;
     display: block;
     margin-bottom: 20px;
-    border-radius: 10px;
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.brochure-widget a:last-child {
+    margin-bottom: 0;
 }
 
 .brochure-widget a i {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .brochure-widget a:hover {
@@ -2769,7 +2774,6 @@ nav .main-menu li a {
     background: #fff;
     padding: 30px;
     margin-bottom: 30px;
-    border-radius: 10px;
     -webkit-box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
             box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.1);
 }
@@ -2784,19 +2788,10 @@ nav .main-menu li a {
 .bizton-widget .widget-title::before {
     position: absolute;
     content: '';
-    width: 30px;
+    width: 40px;
     border-bottom: 3px solid #fd4a18;
     bottom: 0;
     left: 0;
-}
-
-.bizton-widget .widget-title::after {
-    position: absolute;
-    content: '';
-    width: 5px;
-    border-bottom: 3px solid #fd4a18;
-    bottom: 0;
-    left: 35px;
 }
 
 .bizton-widget .search-form .form-control {
@@ -2827,14 +2822,13 @@ nav .main-menu li a {
 .bizton-widget .category-list a {
     display: block;
     padding: 10px 0;
-    border-bottom: 1px solid #ced4da;
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    border-bottom: 1px solid #e7e7e7;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .bizton-widget .category-list a:last-child {
-    margin-bottom: 0px;
     border-bottom: none;
 }
 
