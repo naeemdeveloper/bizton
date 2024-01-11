@@ -41,6 +41,24 @@
             },
         }
     });
+    
+    // blog post slider
+    $('.blog-post-slider').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        margin: 0,
+        autoplay: true,
+        autoplayHoverPause:true,
+        autoplaySpeed: 1000,
+        autoplayTimeout: 3000,
+        autoHeight:true,
+        items: 1,
+        navText: [
+            "<i class='fal fa-angle-left'></i>",
+            "<i class='fal fa-angle-right'></i>"
+        ],
+    });
 
     // testimonial slider
     $('.testimonial-slider').owlCarousel({
