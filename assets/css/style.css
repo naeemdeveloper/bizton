@@ -31,6 +31,7 @@ table of contents:
 >> video css
 >> play button css
 >> team css
+>> team details css
 >> faq css
 >> testimonial css
 >> blog css
@@ -45,7 +46,6 @@ table of contents:
 
 
 >> contact us css
->> team details css
 >> error css
 >> home 2 css
 --------------------------------------------------------------*/
@@ -1759,6 +1759,42 @@ nav .main-menu li a {
     text-transform: capitalize;
 }
 
+/*-- team details css --*/
+.team-details-info {
+    margin: 20px 0;
+}
+
+.team-details-info li {
+    margin-bottom: 10px;
+}
+
+.team-name-tagline {
+    color: #fd4a18;
+}
+
+.team-details-info a:hover {
+    color: #fd4a18;
+}
+
+.team-details-info a i {
+    margin-right: 10px;
+    color: #fd4a18;
+}
+
+.team-details-social a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #151515;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.team-details-social a:hover {
+    color: #fd4a18;
+}
+
 /*-- faq css --*/
 .faq-area .accordion-item {
     border: none;
@@ -2988,55 +3024,6 @@ nav .main-menu li a {
     .contact-form {
         padding: 50px 20px;
     }
-}
-
-/*-- team details css --*/
-.team-single-img img {
-    border-radius: 15px;
-}
-
-.team-details {
-    padding: 30px;
-}
-
-.team-details-info {
-    margin: 20px 0;
-}
-
-.team-details-info li {
-    margin-bottom: 10px;
-}
-
-.team-name-tagline {
-    color: #fd4a18;
-}
-
-.team-details-info a:hover {
-    color: #fd4a18;
-}
-
-.team-details-info a i {
-    margin-right: 10px;
-    color: #fd4a18;
-}
-
-.team-details-social a {
-    margin-right: 15px;
-    font-size: 20px;
-    color: #151515;
-    display: inline-block;
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-.team-details-social a:hover {
-    color: #fd4a18;
-}
-
-.biography {
-    padding-right: 20px;
-    margin-bottom: 30px;
 }
 
 /*-- error css --*/
