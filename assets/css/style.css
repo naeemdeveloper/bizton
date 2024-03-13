@@ -40,10 +40,10 @@ table of contents:
 >> footer css
 >> scroll top css
 >> breadcrumb css
-
-
->> choose css
 >> skill css
+>> choose css
+
+
 >> contact us css
 >> team details css
 >> error css
@@ -2749,117 +2749,9 @@ nav .main-menu li a {
     }
 }
 
-/*-- choose css --*/
-.choose-icon {
-    position: relative;
-    margin-right: 18px;
-    z-index: 1;
-    line-height: 0;
-}
-
-.choose-icon i {
-    font-size: 44px;
-    line-height: 10px;
-    color: #fd4a18;
-}
-
-.choose-details {
-    margin-left: 80px;
-}
-
-.choose-items-wrapper {
-    margin-top: 40px;
-}
-
-.choose-details .choose-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 70px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-.choose-area .choose-details .choose-item h5 {
-    margin-bottom: 0;
-}
-
-.choose-area {
-    position: relative;
-}
-
-.choose-area .choose-img {
-    position: relative;
-    z-index: 1;
-    padding-right: 66px;
-}
-
-.choose-area .choose-img>img {
-    border-radius: 15px;
-}
-
-.choose-area .choose-exp {
-    position: absolute;
-    width: 82%;
-    top: 50%;
-    right: 72px;
-    background-color: #fd4a18;
-    border-radius: 0 0 15px 15px;
-    z-index: -1;
-    text-align: center;
-    padding: 20px;
-    -webkit-transform: rotate(-90deg) translateX(50%);
-        -ms-transform: rotate(-90deg) translateX(50%);
-            transform: rotate(-90deg) translateX(50%);
-    -webkit-transform-origin: 100% 0;
-        -ms-transform-origin: 100% 0;
-            transform-origin: 100% 0;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    margin: 0;
-    color: #fff;
-    font-size: 20px;
-}
-
-@media all and (max-width: 1199px) {
-    .choose-title {
-        font-size: 30px;
-    }
-}
-
-@media all and (max-width: 991px) {
-    .choose-details {
-        margin-left: 0;
-        margin-top: 40px;
-    }
-}
-
 /*-- skill css --*/
-.skill-wrapper.grid-2 {
-    grid-gap: 6rem;
-}
-
-.skill-img img {
-    border-radius: 15px;
-}
-
 .skill-right .skill-details {
-    margin-bottom: 25px;
-}
-
-.skill-right .site-sub-heading {
-    margin-bottom: 20px;
-    color: #1d42d9;
-}
-
-.skill-right .site-heading {
-    font-size: 38px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #151515;
-    text-transform: capitalize;
+    margin-bottom: 30px;
 }
 
 .progress-box {
@@ -2873,9 +2765,7 @@ nav .main-menu li a {
 }
 
 .progress-box h5 {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2891,21 +2781,88 @@ nav .main-menu li a {
 .progress-box .progress {
     height: 10px;
     background-color: #E9ECFB;
-    border-radius: 50px;
+    border-radius: 0px;
 }
 
 .progress-box .progress .progress-bar {
     background-color: #fd4a18;
-    border-radius: 50px;
+    border-radius: 0px;
+}
+
+/*-- choose css --*/
+.choose-area {
+    position: relative;
+}
+
+.choose-area .choose-img {
+    position: relative;
+    z-index: 1;
+    padding-right: 70px;
+}
+
+.choose-area .choose-exp {
+    position: absolute;
+    width: 82%;
+    top: 50%;
+    right: 72px;
+    background-color: #fd4a18;
+    z-index: -1;
+    text-align: center;
+    padding: 15px;
+    -webkit-transform: rotate(-90deg) translateX(50%);
+        -ms-transform: rotate(-90deg) translateX(50%);
+            transform: rotate(-90deg) translateX(50%);
+    -webkit-transform-origin: 100% 0;
+        -ms-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.choose-icon {
+    position: relative;
+    margin-right: 18px;
+    z-index: 1;
+    line-height: 0;
+}
+
+.choose-icon i {
+    font-size: 50px;
+    line-height: 10px;
+    color: #fd4a18;
+}
+
+.choose-details {
+    margin-left: 30px;
+}
+
+.choose-items-wrapper {
+    margin-top: 50px;
+}
+
+.choose-details .choose-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.choose-area .choose-details .choose-item h5 {
+    margin-bottom: 0;
+    font-weight: 500;
 }
 
 @media all and (max-width: 991px) {
-    .skill-right .site-heading {
-        font-size: 30px;
-    }
-
-    .skill-img img {
-        width: 100%;
+    .choose-details {
+        margin-left: 0;
+        margin-top: 40px;
     }
 }
 
