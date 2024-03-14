@@ -43,10 +43,10 @@ table of contents:
 >> breadcrumb css
 >> skill css
 >> choose css
+>> error css
 
 
 >> contact us css
->> error css
 >> home 2 css
 --------------------------------------------------------------*/
 
@@ -2902,6 +2902,41 @@ nav .main-menu li a {
     }
 }
 
+/*-- error css --*/
+.error-wrapper {
+    text-align: center;
+}
+
+.error-wrapper h1 {
+    font-size: 200px;
+    font-weight: bold;
+}
+
+.error-wrapper h1 span {
+    color: #fd4a18;
+    line-height: 0.8;
+}
+
+.error-wrapper h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.error-wrapper .theme-btn {
+    margin-top: 30px;
+}
+
+.error-wrapper .theme-btn i {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+@media all and (max-width: 767.98px) {
+    .error-wrapper h1 {
+        font-size: 160px;
+    }
+}
+
 /*-- contact us css --*/
 .contact-wrapper {
     background: #fff;
@@ -3023,39 +3058,6 @@ nav .main-menu li a {
 @media all and (max-width: 991px) {
     .contact-form {
         padding: 50px 20px;
-    }
-}
-
-/*-- error css --*/
-.error-wrapper {
-    text-align: center;
-}
-
-.error-wrapper h1 {
-    font-size: 200px;
-    font-weight: bold;
-}
-
-.error-wrapper h1 span {
-    color: #fd4a18;
-}
-
-.error-wrapper h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.error-wrapper img {
-    width: 100%;
-}
-
-.error-wrapper .theme-btn {
-    margin-top: 30px;
-}
-
-@media all and (max-width: 767px) {
-    .error-wrapper h1 {
-        font-size: 160px;
     }
 }
 
